@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.background{
+    min-height: 100vh;
+    background: url(/img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 5%;
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.nav-left{
+    display: flex;
+    margin-left: 150px;
+}
+nav .nav-left .logo{
+    display: flex;
+    align-items: center;
+}
+nav .nav-left .logo img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #000000;
+    min-width: 160px;
+    border-radius: 15%;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background: rgba(0, 0, 0, .5);
+    }
+  
+.dropdown:hover .dropdown-content {
+        display: block;
+    }
+.nav-right{
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+.nav-right .navbar{
+    margin-top: 10px;
+}
+.nav-right .navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 17px;
+    transition: color;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.navbar a:hover{
+    color: #c0a600;
+}
+.nav-right input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.nav-right button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.text{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 80px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #e18d96;
+    text-shadow: 5px 5px 5px #a02c2d;
+}
+
+/* product list */
+
+.menu{
+    text-align: center;
+    margin-top: 3%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.menu img{
+    border-radius: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color: #e18d96;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+}
+.menu a:hover{
+    color: #a02c2d;
+}
+
